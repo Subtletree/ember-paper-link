@@ -1,9 +1,0 @@
-// paper-link
-a.md-button.paper-link:not(.md-raised).active {
-  background-color: rgba(153, 153, 153, 0.4);
-}
-
-// paper-link-item
-md-list-item > .paper-link {
-  @extend button.md-no-style;
-}
