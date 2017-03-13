@@ -8,7 +8,7 @@ There is also a `paper-link-item` component that creates a list item with the sa
 
 ## Usage
 
-An example usage:
+Example usage:
 
 ```hbs
 {{paper-link 'My route' 'my-route'}}
@@ -47,7 +47,7 @@ Has the same api as [link-to](http://emberjs.com/api/classes/Ember.Templates.hel
 
 Make sure to add any `link-to` parameters before `paper-button` ones e.g:
 
-```
+```hbs
 {{paper-link 'My route' 'my-route' model raised=true}}
 ```
 
@@ -57,7 +57,7 @@ Has the same api as [paper-item](http://miguelcobain.github.io/ember-paper/relea
 
 Make sure to add any `link-to` parameters before `paper-item` ones e.g:
 
-```
+```hbs
 {{#paper-link-item 'my-route' model class="md-2-line" as |controls|}}
   <img src={{item.img}} alt={{item.name}} class="md-avatar">
   <div class="md-list-item-text">
