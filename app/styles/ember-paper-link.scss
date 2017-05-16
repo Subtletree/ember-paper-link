@@ -1,7 +1,7 @@
 // paper-link
 a.md-button.paper-link {
   &:not(.md-raised).active {
-    background-color: rgba(153, 153, 153, 0.4);
+    background-color: rgba(0, 0, 0, 0.16);
   }
   // Angular material sets diabled button color with important.. so need to do the same here to override
   &.md-raised.active[disabled] {
