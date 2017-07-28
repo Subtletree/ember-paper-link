@@ -43,7 +43,7 @@ Don't forget to import your styles in your `app.scss` **after** importing ember 
 
 ### `{{paper-link}}`
 
-Has the same api as [link-to](http://emberjs.com/api/classes/Ember.Templates.helpers.html#method_link-to) with the [paper-button](http://miguelcobain.github.io/ember-paper/release-1/#/components/button) attributes added.
+Has the same api as [link-to](http://emberjs.com/api/classes/Ember.Templates.helpers.html#method_link-to) with the [paper-button](http://miguelcobain.github.io/ember-paper/#/components/button) attributes added.
 
 Make sure to add any `link-to` parameters before `paper-button` ones e.g:
 
@@ -53,7 +53,7 @@ Make sure to add any `link-to` parameters before `paper-button` ones e.g:
 
 ### `{{#paper-link-item as |controls|}}`
 
-Has the same api as [paper-item](http://miguelcobain.github.io/ember-paper/release-1/#/components/list) with the [link-to](http://emberjs.com/api/classes/Ember.Templates.helpers.html#method_link-to) attributes added.
+Has the same api as [paper-item](http://miguelcobain.github.io/ember-paper/#/components/list) with the [link-to](http://emberjs.com/api/classes/Ember.Templates.helpers.html#method_link-to) attributes added.
 
 Make sure to add any `link-to` parameters before `paper-item` ones e.g:
 
