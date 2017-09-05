@@ -35,6 +35,8 @@ Example usage:
 
 The downside of `ember-href-to` is that it does not handle displaying an 'active' state based on the current route.
 
+[More discussion here](https://github.com/Subtletree/ember-paper-link/issues/5)
+
 ## Demo
 
 https://subtletree.github.io/ember-paper-link/
