@@ -22,6 +22,19 @@ Example usage:
 {{/paper-list}}
 ```
 
+## Alternative to this addon
+
+`paper-button` and `paper-item` both accept an `href` attribute for link functionality. For internal links the [ember-href-to](https://github.com/intercom/ember-href-to) addon is recommended:
+```hbs
+{{#paper-button href=(href-to "index")}}
+  Home
+{{/paper-button}}
+```
+
+`ember-href-to` has the benefit of being [12x faster](https://github.com/GavinJoyce/ember-performance/pull/1) than `link-to` which is used internally by `ember-paper-link`.
+
+The downside of `ember-href-to` is that it does not handle displaying an 'active' state based on the current route.
+
 ## Demo
 
 https://subtletree.github.io/ember-paper-link/
