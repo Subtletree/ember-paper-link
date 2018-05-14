@@ -1,4 +1,3 @@
-import Ember from 'ember';
 import PaperItem from 'ember-paper/components/paper-item';
 import layout from '../templates/components/paper-link-item';
 
