@@ -31,14 +31,6 @@ export default LinkComponent.extend(FocusableMixin, RippleMixin, ColorMixin, Pro
     'mini:md-mini'
   ],
 
-  // if passedParams then convert passedParams to link-to's expected positionalParams
-  init() {
-    this._super(...arguments);
-    if (this.get('passedParams')) {
-      this.set('params', this.get('passedParams'));
-    }
-  },
-
   // FocusableMixin overrides active so set back to link-to's active
   active: LinkComponent.active,
 
