@@ -84,6 +84,7 @@ Make sure to add any `link-to` parameters before `paper-item` ones e.g:
 ```
 ## Running
 
+* `npm run lint:hbs`
 * `npm run lint:js`
 * `npm run lint:js -- --fix`
 
