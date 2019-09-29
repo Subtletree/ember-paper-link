@@ -9,7 +9,7 @@
         <h4 class="flex-20">Flat</h4>
         <div class="flex layout-row layout-align-space-around-center">
           {{paper-link 'First route' 'first-route'}}
-          {{paper-link 'Second route' 'second-route'}}
+          {{paper-link 'Second route' 'second-route' data-test-selector='second-route'}}
           {{paper-link 'Third route' 'third-route'}}
         </div>
       </div>
@@ -62,7 +62,7 @@
           {{paper-icon 'filter_1'}}
           <p>First route</p>
         {{/paper-link-item}}
-        {{#paper-link-item 'second-route'}}
+        {{#paper-link-item 'second-route'  data-test-selector='second-route-item'}}
           {{paper-icon 'filter_2'}}
           <p>Second route</p>
         {{/paper-link-item}}
