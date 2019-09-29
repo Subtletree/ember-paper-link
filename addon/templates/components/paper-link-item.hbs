@@ -5,10 +5,10 @@
   radio=(component "paper-radio-proxiable" parentComponent=this bubbles=false shouldRegister=true)
 ) as |controls|}}
 
-  {{#paper-link params=params class="md-no-style" replace=replace}}
+  {{#component linkComponentName params=params class="md-no-style" replace=replace}}
     <div class="md-list-item-inner">
       {{yield controls}}
     </div>
-  {{/paper-link}}
+  {{/component}}
 
 {{/with}}
