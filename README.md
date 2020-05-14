@@ -41,6 +41,15 @@ The downside of `ember-href-to` is that it does not handle displaying an 'active
 
 https://subtletree.github.io/ember-paper-link/
 
+
+Compatibility
+------------------------------------------------------------------------------
+
+* Ember.js v3.12 or above
+* Ember CLI v2.13 or above
+* Node.js v10 or above
+
+
 Installation
 ------------------------------------------------------------------------------
 
@@ -99,7 +108,6 @@ Make sure to add any `link-to` parameters before `paper-item` ones e.g:
 * `ember serve`
 * Visit the dummy application at [http://localhost:4200](http://localhost:4200).
 
-For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).
 
 License
 ------------------------------------------------------------------------------

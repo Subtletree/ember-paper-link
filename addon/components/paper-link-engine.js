@@ -24,7 +24,7 @@ export default PaperLink.extend({
       this._prefixProperty(owner.mountPoint, routeKey);
 
       // Prepend engine mount point to current-when if set
-      if (get(this, 'current-when') !== null) {
+      if (this['current-when'] !== null) {
         this._prefixProperty(owner.mountPoint, 'current-when');
       }
     }
