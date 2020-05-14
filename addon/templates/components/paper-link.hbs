@@ -1,0 +1,10 @@
+{{~#if (has-block)~}}
+  {{yield}}
+{{~else~}}
+  {{this.linkTitle}}
+{{~/if~}}
+
+<PaperRipple
+  @fitRipple={{@iconButton}}
+  @center={{@iconButton}}
+  @dimBackground={{not @iconButton}}/>

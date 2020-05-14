@@ -8,6 +8,9 @@
   {{#component linkComponentName params=params class="md-no-style" replace=replace}}
     <div class="md-list-item-inner">
       {{yield controls}}
+      <PaperRipple
+        @noink={{this.noink}}
+        @dimBackground={{true}}/>
     </div>
   {{/component}}
 

@@ -1,12 +1,13 @@
-import { reads, and, readOnly, not } from '@ember/object/computed';
+import { reads, and } from '@ember/object/computed';
 import LinkComponent from '@ember/routing/link-component';
+import layout from '../templates/components/paper-link'
 
 import FocusableMixin from 'ember-paper/mixins/focusable-mixin';
-import RippleMixin from 'ember-paper/mixins/ripple-mixin';
 import ColorMixin from 'ember-paper/mixins/color-mixin';
 import ProxiableMixin from 'ember-paper/mixins/proxiable-mixin';
 
-export default LinkComponent.extend(FocusableMixin, RippleMixin, ColorMixin, ProxiableMixin, {
+export default LinkComponent.extend(FocusableMixin, ColorMixin, ProxiableMixin, {
+  layout,
 
   // Add needed paper-button properties
   classNames: ['md-default-theme', 'md-button', 'paper-link'],
@@ -17,12 +18,6 @@ export default LinkComponent.extend(FocusableMixin, RippleMixin, ColorMixin, Pro
 
   // For raised buttons: toggle disabled when button is active
   disabled: and('raised', 'active'),
-
-  // Ripple Overrides
-  rippleContainerSelector: null,
-  fitRipple: readOnly('iconButton'),
-  center: readOnly('iconButton'),
-  dimBackground: not('iconButton'),
 
   classNameBindings: [
     'raised:md-raised',

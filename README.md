@@ -6,6 +6,11 @@ The `paper-link` component makes it easy to have buttons that display an 'active
 
 There is also a `paper-link-item` component that creates a list item with the same `link-to` functionality. Intended for use in nav lists.
 
+| Version compatibility                           | ember-paper-link version     |
+|-------------------------------------------------|------------------------------|
+| Ember 3.11.0+ or ember-paper 1.0.0-beta.27+     | ^1.0.0                       |
+| Ember < 3.11.0 or ember-paper  < 1.0.0-beta.27  |  0.0.6                       |
+
 ## Usage
 
 Example usage:
