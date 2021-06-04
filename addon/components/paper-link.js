@@ -1,6 +1,7 @@
 import { reads, and } from '@ember/object/computed';
 import LinkComponent from '@ember/routing/link-component';
 import layout from '../templates/components/paper-link'
+import { computed } from '@ember/object';
 
 import FocusableMixin from 'ember-paper/mixins/focusable-mixin';
 import ColorMixin from 'ember-paper/mixins/color-mixin';
@@ -27,7 +28,9 @@ export default LinkComponent.extend(FocusableMixin, ColorMixin, ProxiableMixin, 
   ],
 
   // FocusableMixin overrides active so set back to link-to's active
-  active: LinkComponent.active,
+  active: computed('activeClass', '_active', function() {
+    return this._active ? this.activeClass : false;
+  }),
 
   // FocusableMixin overrides to prevent changing 'active' property
   down() {
